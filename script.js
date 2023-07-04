@@ -1,13 +1,7 @@
-
-
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
+//display the current day and time
 var today = moment().format('dddd, MMMM Do YYYY');
 $("#currentDay").html(today);
 console.log(today);
-
-
 
 //added an event listener to the save button
 $(document).ready(function () {
@@ -40,7 +34,7 @@ $(document).ready(function () {
       }
     })
   }
-
+//gets items from localstorage
   $("#hour9 .description").val(localStorage.getItem("hour9"));
   $("#hour10 .description").val(localStorage.getItem("hour10"));
   $("#hour11 .description").val(localStorage.getItem("hour11"));
@@ -53,6 +47,4 @@ $(document).ready(function () {
 
   hourUpdater();
 })
-  
- 
-  // TODO: Add code to display the current date in the header of the page.
+
