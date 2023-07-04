@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -31,66 +31,66 @@
 
     <div class="container">
 <!--added an entry for each time in the work day-->
-      <div class="row">
-        <div class="col-1 pr-5 border text-right">9 AM</div>
-        <textarea id="hour-9" class="entry col border"></textarea>
-        <button id="9" type="button" class="saveBtn col-1 border"><i class="fas fa-save"></i></button>
+      <div id="hour9" class="row time-block">
+        <div class="col-1 pr-5 border text-right hour">9 AM</div>
+        <textarea class="col border description"></textarea>
+        <button class="saveBtn col-1 border"><i class="fas fa-save"></i></button>
       </div>
 
     
-      <div class="row">
-        <div class="col-1 pr-5 border text-right">10 AM</div>
-        <textarea id="hour-10" class="entry col border"></textarea>
-        <button id="10" type="button" class="saveBtn col-1 border"><i class="fas fa-save"></i></button>
+      <div id="hour10" class="row time-block">
+        <div class="col-1 pr-5 border text-right hour">10 AM</div>
+        <textarea class="col border description"></textarea>
+        <button class="saveBtn col-1 border"><i class="fas fa-save"></i></button>
       </div>
 
       
-      <div class="row">
-        <div class="col-1 pr-5 border text-right">11 AM</div>
-        <textarea id="hour-11" class="entry col border"></textarea>
-        <button id="11" type="button" class="saveBtn col-1 border"><i class="fas fa-save"></i></button>
+      <div id="hour11" class="row time-block">
+        <div class="col-1 pr-5 border text-right hour">11 AM</div>
+        <textarea class="col border description"></textarea>
+        <button class="saveBtn col-1 border"><i class="fas fa-save"></i></button>
       </div>
 
     
-      <div class="row">
-        <div class="col-1 pr-5 border text-right">12 PM</div>
-        <textarea id="hour-12" class="entry col border"></textarea>
-        <button id="12" type="button" class="saveBtn col-1 border"><i class="fas fa-save"></i></button>
+      <div id="hour12" class="row time-block">
+        <div class="col-1 pr-5 border text-right hour">12 AM</div>
+        <textarea class="col border description"></textarea>
+        <button class="saveBtn col-1 border"><i class="fas fa-save"></i></button>
       </div>
 
     
-      <div class="row">
-        <div class="col-1 pr-5 border text-right">1 PM</div>
-        <textarea id="hour-1" class="entry col border"></textarea>
-        <button id="1" type="button" class="saveBtn col-1 border"><i class="fas fa-save"></i></button>
+      <div id="hour1" class="row time-block">
+        <div class="col-1 pr-5 border text-right hour">1 PM</div>
+        <textarea class="col border description"></textarea>
+        <button class="saveBtn col-1 border"><i class="fas fa-save"></i></button>
       </div>
 
     
-      <div class="row">
-        <div class="col-1 pr-5 border text-right">2 PM</div>
-        <textarea id="hour-2" class="entry col border"></textarea>
-        <button id="2" type="button" class="saveBtn col-1 border"><i class="fas fa-save"></i></button>
+      <div id="hour2" class="row time-block">
+        <div class="col-1 pr-5 border text-right hour">2 PM</div>
+        <textarea class="col border description"></textarea>
+        <button class="saveBtn col-1 border"><i class="fas fa-save"></i></button>
       </div>
 
     
-      <div class="row">
-        <div class="col-1 pr-5 border text-right">3 PM</div>
-        <textarea id="hour-3" class="entry col border"></textarea>
-        <button id="3" type="button" class="saveBtn col-1 border"><i class="fas fa-save"></i></button>
+      <div id="hour3" class="row time-block">
+        <div class="col-1 pr-5 border text-right hour">3 PM</div>
+        <textarea class="col border description"></textarea>
+        <button class="saveBtn col-1 border"><i class="fas fa-save"></i></button>
       </div>
 
     
-      <div class="row">
-        <div class="col-1 pr-5 border text-right">4 PM</div>
-        <textarea id="hour-4" class="entry col border"></textarea>
-        <button id="4" type="button" class="saveBtn col-1 border"><i class="fas fa-save"></i></button>
+      <div id="hour4" class="row time-block">
+        <div class="col-1 pr-5 border text-right hour">4 PM</div>
+        <textarea class="col border description"></textarea>
+        <button class="saveBtn col-1 border"><i class="fas fa-save"></i></button>
       </div>
 
     
-      <div class="row">
-        <div class="col-1 pr-5 border text-right">5 PM</div>
-        <textarea id="hour-5" class="entry col border"></textarea>
-        <button id="5" type="button" class="saveBtn col-1 border"><i class="fas fa-save"></i></button>
+      <div id="hour5" class="row time-block">
+        <div class="col-1 pr-5 border text-right hour">5 PM</div>
+        <textarea class="col border description"></textarea>
+        <button class="saveBtn col-1 border"><i class="fas fa-save"></i></button>
       </div>
     </div>
 
@@ -98,9 +98,8 @@
     <script
       src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
       integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="script.js"></script>
+      crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

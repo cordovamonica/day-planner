@@ -3,6 +3,11 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
+var today = moment().format('dddd, MMMM Do YYYY');
+$("#currentDay").html(today);
+console.log(today);
+
+
 
 //added an event listener to the save button
 $(document).ready(function () {
@@ -14,7 +19,7 @@ $(document).ready(function () {
   })
 //get the current day and time 
   function hourUpdater() {
-    var currentHour = moment().hours();
+    var currentHour = moment().hour();
     $(".time-block").each(function () {
       var blockHour = parseInt($(this).attr("id").split("hour")[1]);
       //check the time and add the appropriate class by comparing to the current hour
@@ -45,12 +50,9 @@ $(document).ready(function () {
   $("#hour3 .description").val(localStorage.getItem("hour3"));
   $("#hour4 .description").val(localStorage.getItem("hour4"));
   $("#hour5 .description").val(localStorage.getItem("hour5"));
-});
+
+  hourUpdater();
+})
   
  
-  //
-  // TODO: Add code to get any user input that was saved in localStorage and set
-  // the values of the corresponding textarea elements. HINT: How can the id
-  // attribute of each time-block be used to do this?
-  //
   // TODO: Add code to display the current date in the header of the page.
