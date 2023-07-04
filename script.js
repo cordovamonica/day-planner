@@ -8,7 +8,7 @@ $(document).ready(function () {
   $(".saveBtn").on("click", function () {
     var value = $(this).siblings(".description").val();
     var time = $(this).parent().attr("id");
-    //save the value and time to local storage
+  //save the value and time to local storage
     localStorage.setItem(time, value);
   })
 //function to compare time and add color blocks according to time 
@@ -23,7 +23,6 @@ $(document).ready(function () {
       else {
         $("#hour" + i).addClass("future");
       }}
-    
   }
 //gets items from localstorage
   $("#hour9 .description").val(localStorage.getItem("hour9"));
@@ -35,6 +34,6 @@ $(document).ready(function () {
   $("#hour15 .description").val(localStorage.getItem("hour15"));
   $("#hour16 .description").val(localStorage.getItem("hour16"));
   $("#hour17 .description").val(localStorage.getItem("hour17"));
-
+//runs the hourUpdater function
   hourUpdater();
 })
