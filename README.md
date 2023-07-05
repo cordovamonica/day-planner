@@ -17,4 +17,4 @@ The user can enter text into the time blocks and save them to local storage, whi
 
 ## Link to the Deployed Application
 
-["Work Day Planner"]()
+["Work Day Planner"](https://cordovamonica.github.io/day-planner/)
